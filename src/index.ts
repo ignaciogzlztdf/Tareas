@@ -1,7 +1,8 @@
 import "./styles.css";
 
 // Ejercicio: Cálculo de descuento
-console.log("Ejercicio debajo: Cálculo de descuento");
+console.log(" ");
+console.log("Ejercicio: Cálculo de descuento");
 /* Consigna
 Implemente un algoritmo que calcule y muestre 
 por pantalla el precio final de un producto 
@@ -21,7 +22,8 @@ let precioFinalProducto: number = precioInicialProducto - descuento;
 console.log("El precio final del producto es: " + precioFinalProducto);
 
 // Problema: Autos de carrera
-console.log("Ejercicio debajo: Autos de carrera");
+console.log(" ");
+console.log("Ejercicio: Autos de carrera");
 /* Consigna
 En una prueba, un piloto tiene que completar
 4 vueltas
@@ -62,8 +64,9 @@ console.log("El promedio de vuelta fue: " + promedioVueltas);
 */
 
 // Ejercicio: Aplicar descuento
-console.log("Ejercicio debajo: Aplicar descuento");
-/* Consignas
+console.log(" ");
+console.log("Ejercicio: Aplicar descuento");
+/* Consigna
 Desarrolle un algoritmo que diga el precio de 
 una compra 
 La compra se compone del precio del producto 
@@ -92,3 +95,11 @@ if (gastoDelCliente > 1000) {
 } else {
   console.log("El precio de la compra es de: " + gastoDelCliente);
 }
+
+// Ejercicio: Validar Altura
+/* Consigna
+Desarrolle un algoritmo que, de acuerdo a la altura de una persona, decida si puede entrar a un juego en un parque de diversiones.
+Para poder subirse a la montaña rusa la persona debe medir 1.30m o más.
+*/
+
+const alturaPermitida: number = 1.3;
