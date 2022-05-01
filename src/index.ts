@@ -54,7 +54,9 @@ let totalTiempo: number = 0;
 
 while (contador < 4) {
   contador = contador + 1
-  let tiempoVueltas: number = Number(prompt("Ingrese tiempo de la vuelta " + contador));
+  let tiempoVueltas: number = Number(
+    prompt("Ingrese tiempo de la vuelta " + contador)
+    );
   totalTiempo = totalTiempo + tiempoVueltas;
 }
 let promedioVueltas: number = totalTiempo / 4;
@@ -97,9 +99,30 @@ if (gastoDelCliente > 1000) {
 }
 
 // Ejercicio: Validar Altura
+console.log(" ");
+console.log("Ejercicio: Validar Altura");
 /* Consigna
-Desarrolle un algoritmo que, de acuerdo a la altura de una persona, decida si puede entrar a un juego en un parque de diversiones.
-Para poder subirse a la montaña rusa la persona debe medir 1.30m o más.
+Desarrolle un algoritmo que, de acuerdo a 
+la altura de una persona, decida si puede 
+entrar a un juego en un parque de diversiones.
+Para poder subirse a la montaña rusa la 
+persona debe medir 1.30m o más.
 */
 
 const alturaPermitida: number = 1.3;
+// La altura de la persona la agregaría un guardia o un sensor para que no se pueda engañar al sistema.
+let alturaPersona: number | null = Number(
+  prompt(
+    "Ingrese altura en metros de la persona (no especifique la unidad de medida).",
+    "Por ejemplo: 1.70"
+  )
+);
+
+// Lo que salga en la consola se le puede mostrar por una pequeña pantalla a la persona.
+if (alturaPersona >= alturaPermitida) {
+  console.log("Adelante, disfrute del recorrido.");
+} else {
+  console.log(
+    "No tiene la altura necesaria para subirse a la montaña rusa. Por su seguridad le pedimos que se retire."
+  );
+}
