@@ -1,18 +1,8 @@
 import "./styles.css";
 
 // Ejercicio: Cálculo de descuento
-console.log(" ");
 console.log("Ejercicio: Cálculo de descuento");
-/* Consigna
-Implemente un algoritmo que calcule y muestre 
-por pantalla el precio final de un producto 
-después de aplicarle un descuento
-El precio inicial del producto es $450,50
-El descuento a aplicar es del 10%. Recuerde que 
-puede obtener el 10% de un valor multiplicado por 0,1
-El precio y el descuento deben ser guardados en 
-variables (no ingresados por teclado)
-*/
+
 let precioInicialProducto: number = 450.5;
 let diezPorCiento: number = 0.1;
 
@@ -24,17 +14,8 @@ console.log("El precio final del producto es: " + precioFinalProducto + ".");
 // Problema: Autos de carrera
 console.log(" ");
 console.log("Ejercicio: Autos de carrera");
-/* Consigna
-En una prueba, un piloto tiene que completar
-4 vueltas
-Se necesita un programa que permita ingresar
-por teclado el tiempo de cada vuelta
-El programa debe retornar el tiempo total y el
-promedio de vuelta
-*/
 
 // Realizado de manera secuencial:
-
 let vuelta1: number | null = Number(
   prompt("Tiempo de la primer vuelta (en minutos)", "Por ejemplo: 7.25")
 );
@@ -53,25 +34,6 @@ let promedioVueltas: number = tiempoTotal / 4;
 
 console.log("El tiempo total fue: " + tiempoTotal, "minutos.");
 console.log("El promedio entre vueltas fue: " + promedioVueltas, "minutos.");
-
-// Realizado de manera no secuencial pero que me gustó:
-
-/*
-let contador: number = 0;
-let totalTiempo: number = 0;
-
-while (contador < 4) {
-  contador = contador + 1
-  let tiempoVueltas: number = Number(
-    prompt("Ingrese tiempo de la vuelta " + contador)
-    );
-  totalTiempo = totalTiempo + tiempoVueltas;
-}
-let promedioVuelta: number = totalTiempo / 4;
-
-console.log("El tiempo total fue: " + totalTiempo, "minutos.");
-console.log("El promedio de vuelta fue: " + promedioVuelta,"minutos.");
-*/
 
 // Ejercicio: Aplicar descuento
 console.log(" ");
@@ -110,13 +72,7 @@ if (gastoDelCliente > 1000) {
 // Ejercicio: Validar Altura
 console.log(" ");
 console.log("Ejercicio: Validar Altura");
-/* Consigna
-Desarrolle un algoritmo que, de acuerdo a 
-la altura de una persona, decida si puede 
-entrar a un juego en un parque de diversiones.
-Para poder subirse a la montaña rusa la 
-persona debe medir 1.30m o más.
-*/
+
 const alturaPermitida: number = 1.3;
 // La altura de la persona la agregaría un guardia o un sensor para que no se pueda engañar al sistema.
 let alturaPersona: number | null = Number(
@@ -135,20 +91,7 @@ if (alturaPersona >= alturaPermitida) {
 // Ejercicio: Eureka
 console.log(" ");
 console.log("Ejercicio: Eureka");
-/* Consigna
-Escribir un algoritmo que nos pida
-una clave y verifique que sea la
-correcta.
-Tenga en cuenta que la clave es la
-palabra "eureka".
-Solo tenemos 3 intentos para
-acertar, si fallamos los 3
-intentos el sistema mostrará un
-mensaje indicándonos que hemos
-agotado todas las oportunidades.
-Si acertamos la clave, saldremos
-directamente del programa.
-*/
+
 // Preguntar por el grupo
 const clave: string = "eureka";
 let contador1: number = 0;
