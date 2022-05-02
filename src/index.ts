@@ -19,7 +19,7 @@ let diezPorCiento: number = 0.1;
 let descuento: number = precioInicialProducto * diezPorCiento;
 let precioFinalProducto: number = precioInicialProducto - descuento;
 
-console.log("El precio final del producto es: " + precioFinalProducto);
+console.log("El precio final del producto es: " + precioFinalProducto + ".");
 
 // Problema: Autos de carrera
 console.log(" ");
@@ -35,16 +35,24 @@ promedio de vuelta
 
 // Realizado de manera secuencial:
 
-let vuelta1: number | null = Number(prompt("Tiempo de la primer vuelta"));
-let vuelta2: number | null = Number(prompt("Tiempo de la segunda vuelta"));
-let vuelta3: number | null = Number(prompt("Tiempo de la tercer vuelta"));
-let vuelta4: number | null = Number(prompt("Tiempo de la cuarta vuelta"));
+let vuelta1: number | null = Number(
+  prompt("Tiempo de la primer vuelta (en minutos)", "Por ejemplo: 7.25")
+);
+let vuelta2: number | null = Number(
+  prompt("Tiempo de la segunda vuelta (en minutos)", "Por ejemplo: 7.25")
+);
+let vuelta3: number | null = Number(
+  prompt("Tiempo de la tercer vuelta (en minutos)", "Por ejemplo: 7.25")
+);
+let vuelta4: number | null = Number(
+  prompt("Tiempo de la cuarta vuelta (en minutos)", "Por ejemplo: 7.25")
+);
 
 let tiempoTotal: number = vuelta1 + vuelta2 + vuelta3 + vuelta4;
-let promedioVuelta: number = tiempoTotal / 4;
+let promedioVueltas: number = tiempoTotal / 4;
 
-console.log("El tiempo total fue: " + tiempoTotal);
-console.log("El promedio de vuelta fue: " + promedioVuelta);
+console.log("El tiempo total fue: " + tiempoTotal, "minutos.");
+console.log("El promedio entre vueltas fue: " + promedioVueltas, "minutos.");
 
 // Realizado de manera no secuencial pero que me gustó:
 
@@ -59,10 +67,10 @@ while (contador < 4) {
     );
   totalTiempo = totalTiempo + tiempoVueltas;
 }
-let promedioVueltas: number = totalTiempo / 4;
+let promedioVuelta: number = totalTiempo / 4;
 
-console.log("El tiempo total fue: " + totalTiempo);
-console.log("El promedio de vuelta fue: " + promedioVueltas);
+console.log("El tiempo total fue: " + totalTiempo, "minutos.");
+console.log("El promedio de vuelta fue: " + promedioVuelta,"minutos.");
 */
 
 // Ejercicio: Aplicar descuento
@@ -91,11 +99,12 @@ let precioConDescuento: number = gastoDelCliente - diezPorCientoDelGasto;
 
 if (gastoDelCliente > 1000) {
   console.log(
-    "Su compra recibió un descuento del 10 por ciento por haber superado la suma de $1000, ahora el monto a pagar es de: " +
-      precioConDescuento
+    "Su compra recibió un descuento del 10 por ciento por haber superado la suma de $1000, ahora el monto a pagar es de: $" +
+      precioConDescuento +
+      "."
   );
 } else {
-  console.log("El precio de la compra es de: " + gastoDelCliente);
+  console.log("El precio de la compra es de: $" + gastoDelCliente + ".");
 }
 
 // Ejercicio: Validar Altura
@@ -112,10 +121,7 @@ persona debe medir 1.30m o más.
 const alturaPermitida: number = 1.3;
 // La altura de la persona la agregaría un guardia o un sensor para que no se pueda engañar al sistema.
 let alturaPersona: number | null = Number(
-  prompt(
-    "Ingrese altura en metros de la persona (no especifique la unidad de medida).",
-    "Por ejemplo: 1.70"
-  )
+  prompt("Ingrese altura en metros de la persona.", "Por ejemplo: 1.70")
 );
 
 // Lo que salga en la consola se le puede mostrar por una pequeña pantalla a la persona.
@@ -145,6 +151,7 @@ Si acertamos la clave, saldremos
 directamente del programa.
 */
 
+// Preguntar por el grupo
 const clave: string = "eureka";
 let contador1: number = 0;
 
@@ -162,4 +169,7 @@ while (contador1 < 3) {
 }
 if (claveIngresada !== clave) {
   alert("Se han agotado todas las oportunidades.");
+  console.log(
+    "El usuario ingresó una clave incorrecta tres veces seguidas y ya no tiene permitido intentar nuevamente."
+  );
 }
