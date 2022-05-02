@@ -91,7 +91,7 @@ let precioConDescuento: number = gastoDelCliente - diezPorCientoDelGasto;
 
 if (gastoDelCliente > 1000) {
   console.log(
-    "Su compra recibió un descuento del 10 por ciento por haber superado la suma de $1000, ahora el precio a pagar es de: " +
+    "Su compra recibió un descuento del 10 por ciento por haber superado la suma de $1000, ahora el monto a pagar es de: " +
       precioConDescuento
   );
 } else {
@@ -125,4 +125,41 @@ if (alturaPersona >= alturaPermitida) {
   console.log(
     "No tiene la altura necesaria para subirse a la montaña rusa. Por su seguridad le pedimos que se retire."
   );
+}
+
+// Ejercicio: Eureka
+console.log(" ");
+console.log("Ejercicio: Eureka");
+/* Consigna
+Escribir un algoritmo que nos pida
+una clave y verifique que sea la
+correcta.
+Tenga en cuenta que la clave es la
+palabra "eureka".
+Solo tenemos 3 intentos para
+acertar, si fallamos los 3
+intentos el sistema mostrará un
+mensaje indicándonos que hemos
+agotado todas las oportunidades.
+Si acertamos la clave, saldremos
+directamente del programa.
+*/
+
+const clave: string = "eureka";
+let contador1: number = 0;
+
+while (contador1 < 3) {
+  let claveIngresada: string | null = prompt("Ingrese la clave");
+  if (claveIngresada === clave) {
+    contador1 = 3;
+    console.log("*El usuario salió del programa*");
+  } else {
+    contador1 = contador1 + 1;
+    if (contador1 < 3) {
+      alert("Clave incorrecta, intente nuevamente.");
+    }
+  }
+}
+if (claveIngresada !== clave) {
+  alert("Se han agotado todas las oportunidades.");
 }
