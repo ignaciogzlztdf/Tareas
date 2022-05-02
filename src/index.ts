@@ -117,7 +117,6 @@ entrar a un juego en un parque de diversiones.
 Para poder subirse a la montaña rusa la 
 persona debe medir 1.30m o más.
 */
-
 const alturaPermitida: number = 1.3;
 // La altura de la persona la agregaría un guardia o un sensor para que no se pueda engañar al sistema.
 let alturaPersona: number | null = Number(
@@ -150,7 +149,6 @@ agotado todas las oportunidades.
 Si acertamos la clave, saldremos
 directamente del programa.
 */
-
 // Preguntar por el grupo
 const clave: string = "eureka";
 let contador1: number = 0;
@@ -159,7 +157,9 @@ while (contador1 < 3) {
   let claveIngresada: string | null = prompt("Ingrese la clave");
   if (claveIngresada === clave) {
     contador1 = 3;
-    console.log("*El usuario salió del programa*");
+    console.log(
+      "El usuario salió del programa porque ingresó la clave correcta"
+    );
   } else {
     contador1 = contador1 + 1;
     if (contador1 < 3) {
