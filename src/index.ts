@@ -173,3 +173,7 @@ if (claveIngresada !== clave) {
     "El usuario ingresó una clave incorrecta tres veces seguidas y ya no tiene permitido intentar nuevamente."
   );
 }
+
+// Ejercicio: Tablas de multiplicación
+console.log(" ");
+console.log("Ejercicio: Tablas de multiplicación");
