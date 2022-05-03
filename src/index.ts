@@ -15,7 +15,7 @@ console.log("El precio final del producto es: " + precioFinalProducto + ".");
 console.log(" ");
 console.log("Ejercicio: Autos de carrera");
 
-// Realizado de manera secuencial:
+// Realizado de manera secuencial (También la hice de otra forma, pero no la dejo acá para no tener mucho más código)
 let vuelta1: number | null = Number(
   prompt("Tiempo de la primer vuelta (en minutos)", "Por ejemplo: 7.25")
 );
@@ -38,21 +38,13 @@ console.log("El promedio entre vueltas fue: " + promedioVueltas, "minutos.");
 // Ejercicio: Aplicar descuento
 console.log(" ");
 console.log("Ejercicio: Aplicar descuento");
-/* Consigna
-Desarrolle un algoritmo que diga el precio de 
-una compra 
-La compra se compone del precio del producto 
-y la cantidad
-Si el cliente gasta más de $1000 debemos 
-aplicarle un descuento del 10%
-*/
 
-/* No estoy seguro si en esta tarea
-yo le puedo dar el valor que yo quiera
- al producto y a la cantidad
-*/
-let precioProducto: number = 200;
-let cantidadProducto: number = 10;
+let precioProducto: number | null = Number(
+  prompt("Ingrese el precio del producto.", "Por ejemplo: 500.")
+);
+let cantidadProducto: number | null = Number(
+  prompt("Ingrese la cantidad de producto.", "Por ejemplo: 3.")
+);
 let descuento10PorCiento: number = 0.1;
 
 let gastoDelCliente: number = precioProducto * cantidadProducto;
