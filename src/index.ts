@@ -1,26 +1,5 @@
 import "./styles.css";
 
-// CLASE 3 - PROGRAMACIÓN - 25 Y 29 DE ABRIL | EJERCICIOS: PAR/IMPAR Y AUMENTO DE SUELDO
-
-// Ejercicio: Par/Impar
-/* Consigna
-•Desarrollar un algoritmo que dado un número,
-ingresado por el usuario determine si el
-número es par o impar y le informe al usuario
-•En el caso de ser 0 (cero) el algoritmo deberá
-informarlo */
-let numeroIngresado: number | null = Number(
-  prompt("Ingrese un número para determinar si es par o impar.")
-);
-
-if (numeroIngresado === 0) {
-  alert("El número ingresado es 0.");
-} else if (numeroIngresado % 2 === 0) {
-  alert("El número ingresado es par.");
-} else {
-  alert("El número ingresado es impar.");
-}
-
 // Ejercicio: Cálculo de descuento
 console.log("Ejercicio: Cálculo de descuento");
 
@@ -36,7 +15,7 @@ console.log("El precio final del producto es: " + precioFinalProducto + ".");
 console.log(" ");
 console.log("Ejercicio: Autos de carrera");
 
-// Realizado de manera secuencial (También la hice de otra forma, pero no la dejo acá para no tener mucho más código)
+// Realizado de manera secuencial:
 let vuelta1: number | null = Number(
   prompt("Tiempo de la primer vuelta (en minutos)", "Por ejemplo: 7.25")
 );
@@ -59,13 +38,21 @@ console.log("El promedio entre vueltas fue: " + promedioVueltas, "minutos.");
 // Ejercicio: Aplicar descuento
 console.log(" ");
 console.log("Ejercicio: Aplicar descuento");
+/* Consigna
+Desarrolle un algoritmo que diga el precio de 
+una compra 
+La compra se compone del precio del producto 
+y la cantidad
+Si el cliente gasta más de $1000 debemos 
+aplicarle un descuento del 10%
+*/
 
-let precioProducto: number | null = Number(
-  prompt("Ingrese el precio del producto.", "Por ejemplo: 500.")
-);
-let cantidadProducto: number | null = Number(
-  prompt("Ingrese la cantidad de producto.", "Por ejemplo: 3.")
-);
+/* No estoy seguro si en esta tarea
+yo le puedo dar el valor que yo quiera
+ al producto y a la cantidad
+*/
+let precioProducto: number = 200;
+let cantidadProducto: number = 10;
 let descuento10PorCiento: number = 0.1;
 
 let gastoDelCliente: number = precioProducto * cantidadProducto;
@@ -101,7 +88,6 @@ if (alturaPersona >= alturaPermitida) {
   );
 }
 
-// CLASE 4 - PROGRAMACIÓN - 29 DE ABRIL Y 02 DE MAYO | EJERCICIOS: EUREKA - TABLAS DE MULTIPLICACIÓN - SUMA ENTRE NÚMEROS - PAR/IMPAR
 // Ejercicio: Eureka
 console.log(" ");
 console.log("Ejercicio: Eureka");
@@ -134,3 +120,9 @@ if (claveIngresada !== clave) {
 // Ejercicio: Tablas de multiplicación
 console.log(" ");
 console.log("Ejercicio: Tablas de multiplicación");
+/* Consigna
+Diseñar un algoritmo que muestre por pantalla la tabla de
+multiplicación del número ingresado por el usuario.
+Para definir hasta qué número desea que muestre la tabla de
+multiplicación, el usuario también deberá ingresar dicho valor.
+*/
